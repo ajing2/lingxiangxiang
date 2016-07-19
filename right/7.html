@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+	<head>
+		<!--声明当前页面的编码集：charset=gbk,gb2312(中文编码)，utf-8国际编码-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--当前页面的三要素-->
+		<title>html模板</title>
+		<meta name="Keywords" content="关键词,关键词">
+		<meta name="description" content="">
+	</head>
+<body>
+	<h1>表单</h1>
+	表单元素是允许用户在表单中输入信息的元素（如：文本域，下拉列表，单选框，复选框等等）
+	<h2>文本</h2>
+	<font size = "4" color = "red" >代码：</font><br />
+	&lt;form action = "html.do" method = "get"&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;username:&lt;input type = "text" name = "username" /&gt;&lt;br /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;password:&lt;input type = "password" name = "password" /&gt;&lt;br /&gt;<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;textarea cols="11" rows="10"&gt;&lt;/textarea&gt;&lt;br /&gt;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;input type = "submit" value = "提交"&gt;&nbsp;&nbsp;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;input type = "reset" value = "重置"&gt;<br />
+	&lt;/form&gt;<br /><br />
+	<font size = "4" color = "red" >效果：</font>
+	<form action = "html.do" method = "get">
+    username:<input type = "text" name = "username" /><br />
+    password:<input type = "password" name = "password" /><br />
+    <textarea cols="11" rows="10"></textarea><br />
+	<input type = "submit" value = "提交">&nbsp;&nbsp;
+	<input type = "reset" value = "重置">
+	</form>
+
+	<font size = "4" color = "red" >备注：</font><br />
+	<p>当用户单击按钮时，表单的内容会被传送到另一个文件。表单的动作属性定义了目的文件的文件名</p><br /><br />
+
+
+	<h2>单选</h2>
+	<font size = "4" color = "red" >代码：</font><br />
+	&lt;form&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type = "radio" name = "sex" value = "男" /&gt;男&lt;br /&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type = "radio" name = "sex" vulue = "女" /&gt;女&lt;br /&gt;<br />
+	&lt;/form&gt;<br />
+
+	<font size = "4" color = "red" >效果：</font>
+	<form><br />
+		<input type = "radio" name = "sex" value = "男" />男<br />
+		<input type = "radio" name = "sex" vulue = "女" />女<br />
+	</form><br /><br />
+
+
+	<h2>多选</h2>
+	<font size = "4" color = "red" >代码：</font><br />
+	&lt;form&gt;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type = "checkbox" name = "111" /&gt;1 &lt;br /&gt;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type = "checkbox" name = "222" /&gt;2 &lt;br /&gt;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type = "checkbox" name = "333" /&gt;3 &lt;br /&gt;<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&lt;input type = "checkbox" name = "444" /&gt;4 &lt;br /&gt;<br />
+	&lt;/form&gt;<br />
+	<font size = "4" color = "red" >效果：</font><br />
+	<form>
+	<input type = "checkbox" name = "111" />1 <br />
+	<input type = "checkbox" name = "222" />2 <br />
+	<input type = "checkbox" name = "333" />3 <br />
+	<input type = "checkbox" name = "444" />4 <br />
+	</form>
+	<h2>lebel标签</h2>
+	<font size = "4" color = "red" >作用：</font>
+	<p>点击文字的时候，也可以选上，改善用户的体验</p>
+	<font size = "4" color = "red" >代码：</font><br />
+	&lt;form&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for = "nan"&gt;男&lt;/label&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type = "radio" name = "sex" id = "nan" /&gt; &lt;br /&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;label for = "nv"&gt;女&lt;/label&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type = "radio" name = "sex" id ="nv" /&gt; &lt;br /&gt;<br />
+    &lt;/form&gt;<br />
+	<font size = "4" color = "red" >效果：</font>
+	<form>
+        <label for = "nan">男</label>
+        <input type = "radio" name = "sex" id = "nan" /> <br />
+        <label for = "nv">女</label>
+        <input type = "radio" name = "sex" id ="nv" /> <br />
+
+    </form>
+	<h2>下拉列表</h2>
+	<font size = "4" color = "red" >代码：</font><br />
+	&lt;form&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;select name = "list" size = "2"&gt;<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;list1&lt;/option&gt;<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;list2&lt;/option&gt;<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;option&gt;list3&lt;/option&gt;<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;&option&gt;list4&lt;/option&gt;<br />
+		&nbsp;&nbsp;&nbsp;&nbsp;&lt;/select&gt;<br />
+	&lt;/form&gt;<br />
+	<font size = "4" color = "red" >效果：</font>
+	<form>
+		<select name = "list" size = "2">
+			<option>list1</option>
+			<option>list2</option>
+			<option>list3</option>
+			<option>list4</option>
+		</select>
+	</form>
+	<font size = "4" color = "red" >说明：</font>
+	<p>size：表示显示的下拉菜单的数目</p>
+	<h2>隐藏标签</h2>
+	<font size = "4" color = "red" >代码：</font><br />
+	&lt;form&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="hidden" name="hid" value="value"&gt;<br />
+	&lt;/form&gt;<br />
+	<font size = "4" color = "red" >效果：</font><br />
+	111<form>
+        <input type="hidden" name="hid" value="value">
+	</form>1111<br />
+	<font size = "4" color = "red" >说明：</font>
+	<p>什么都看不见，大数据的时候用来提交一些用户的信息例如：从什么入口来等</p>
+</body>
+</html>

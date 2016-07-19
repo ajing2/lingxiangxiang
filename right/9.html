@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+	<head>
+		<!--声明当前页面的编码集：charset=gbk,gb2312(中文编码)，utf-8国际编码-->
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<!--当前页面的三要素-->
+		<title>html模板</title>
+		<meta name="Keywords" content="关键词,关键词">
+		<meta name="description" content="">
+
+		<!--css,js-->
+		<style type="text/css">
+			*{margin:0;padding:0;}
+
+		</style>
+	</head>
+	<body>
+		<h1>frame标签</h1>
+		<font size = "4" color = "red">代码：</font><br />
+		&lt;!doctype html&gt;<br />
+		&lt;html lang="en"&gt;<br />
+		&lt;head&gt;<br />
+				&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;IT-xiang&lt;/title&gt;<br />
+		&lt;/head&gt;<br />
+		&lt;frameset rows = "20%, *"&gt;<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&lt;frame src = "top.html"&gt;&lt;/frame&gt;<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&lt;frameset cols = "15%, *"&gt;<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&lt;frame src = "left.html"&gt;&lt;/frame&gt;<br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&lt;frame src = "right.html" name = "content"&gt;&lt;/frame&gt;<br />
+		&lt;/frameset&gt;<br />
+		&lt;/html&gt;<br />
+		<font size = "4" color = "red">效果：</font><br />
+		<a href = "https://ajing2.github.io/lingxiangxiang/index.html" alt = "javaweb">https://ajing2.github.io/lingxiangxiang/index.html</a><br />
+		<font size = "4" color = "red">说明：</font><br />
+		<p>
+			1.frame标签写的网页不能被百度等收录，认为这个是不安全的<br />
+			2.rows = "20%, 30%, *"  分成2，3, 5 三份，*表示剩下的所有<br />
+			3.&lt;a href = "right/1.html" alt = "目录" target = "content"&gt;html简介&lt;/a&gt;目录进行连接时，要设置target属性。<br />需要和&nbsp;&nbsp;&nbsp;&nbsp;&lt;frame src = "right.html" name = "content"&gt;&lt;/frame&gt;中的name保持一致<br />
+			<b>4.frame不能和body等body中的标签同时存在，否则不显示</b>
+		</p>
+		<h1>iframe标签：</h1>
+			<font size = "4" color = "red">代码：</font><br />
+			&lt;iframe src="../image/1.jpg"&gt;&lt;/iframe&gt; <br />
+			&lt;p&gt;一些老的浏览器不支持 iframe。&lt;/p&gt;<br />
+			&lt;p&gt;如果得不到支持，iframe 是不可见的。&lt;/p&gt;<br /> 
+			<font size = "4" color = "red">效果：</font><br />
+			<a href = "iframe.html">iframe</a>
+	</body>
+</html>
